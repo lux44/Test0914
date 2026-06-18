@@ -2,9 +2,13 @@ package com.example.test0914
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavOptions
+import androidx.navigation.fragment.findNavController
 import com.example.test0914.databinding.FragmentHomeBinding
+import kotlin.math.log
 
 class HomeFragment: Fragment(R.layout.fragment_home) {
     private var _binding: FragmentHomeBinding? = null
@@ -24,6 +28,29 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
                 Intent(requireContext(), LogService::class.java)
             )
         }
+        binding.btnGoDiary.setOnClickListener {
+            Log.i("btn", "go diary click")
+            findNavController().navigate(
+                R.id.diaryFragment,
+                null,
+                NavOptions.Builder()
+                    .setPopUpTo(R.id.homeFragment, inclusive = false)
+                    .setLaunchSingleTop(true)
+                    .build()
+            )
+        }
+        binding.btnGoGraphics.setOnClickListener {
+            Log.i("btn", "go graphic click")
+            findNavController().navigate(
+                R.id.graphicsFragment,
+                null,
+                NavOptions.Builder()
+                    .setPopUpTo(R.id.homeFragment, inclusive = false)
+                    .setLaunchSingleTop(true)
+                    .build()
+            )
+        }
+        Log.e("Tag", "home fragment")
     }
 
     override fun onDestroyView() {
