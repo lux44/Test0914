@@ -4,6 +4,7 @@ import android.app.AlertDialog
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.example.test0914.databinding.DialogDiaryBinding
@@ -18,6 +19,7 @@ class DiaryFragment: Fragment(R.layout.fragment_diary) {
     private var selectedTime = "00:00"
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        Log.e("Tag", "DiaryFragment")
         _binding = FragmentDiaryBinding.bind(view)
 
         binding.btnDate.setOnClickListener {

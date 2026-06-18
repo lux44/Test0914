@@ -30,25 +30,12 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
         }
         binding.btnGoDiary.setOnClickListener {
             Log.i("btn", "go diary click")
-            findNavController().navigate(
-                R.id.diaryFragment,
-                null,
-                NavOptions.Builder()
-                    .setPopUpTo(R.id.homeFragment, inclusive = false)
-                    .setLaunchSingleTop(true)
-                    .build()
-            )
+            MainActivity.binding.bottomNav.selectedItemId =
+                R.id.diaryFragment
         }
         binding.btnGoGraphics.setOnClickListener {
             Log.i("btn", "go graphic click")
-            findNavController().navigate(
-                R.id.graphicsFragment,
-                null,
-                NavOptions.Builder()
-                    .setPopUpTo(R.id.homeFragment, inclusive = false)
-                    .setLaunchSingleTop(true)
-                    .build()
-            )
+            MainActivity.binding.bottomNav.selectedItemId = R.id.graphicsFragment
         }
         Log.e("Tag", "home fragment")
     }
