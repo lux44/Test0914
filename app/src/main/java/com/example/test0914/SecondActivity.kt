@@ -11,6 +11,12 @@ import com.example.test0914.databinding.ActivitySecondBinding
 
 class SecondActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySecondBinding
+    /**
+     * [INTENT [RESULT 결과 반환형 Activity
+     * - 명시적 Intent로 호출됨
+     * - 전달받은 메시지 표시
+     * - 사용자 입력을 결과로 돌려줌
+     */
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

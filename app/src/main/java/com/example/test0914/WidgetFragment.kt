@@ -7,6 +7,14 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import com.example.test0914.databinding.FragmentWidgetBinding
 
+/**
+ * [WIDGET FRAGMENT] 위젯 실습 화면
+ * - CalendarView: 달력형 날짜 선택
+ * - TimePicker: 시간 선택 (spinner 모드)
+ * - Chronometer: 경과 시간 측정
+ * - AlertDialog: 기본 다이얼로그
+ * - ViewBinding 사용
+ */
 class WidgetFragment: Fragment(R.layout.fragment_widget) {
     private var _binding: FragmentWidgetBinding? = null
     private val binding get() = _binding!!
@@ -32,6 +40,8 @@ class WidgetFragment: Fragment(R.layout.fragment_widget) {
         binding.btnStopChrono.setOnClickListener {
             binding.chronometer.stop()
         }
+
+        // [DIALOG] 기본 AlertDialog
 
         binding.btnWidgetDialog.setOnClickListener {
             AlertDialog.Builder(requireContext())

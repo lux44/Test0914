@@ -11,6 +11,12 @@ import com.example.test0914.databinding.FragmentHomeBinding
 import kotlin.math.log
 
 class HomeFragment: Fragment(R.layout.fragment_home) {
+    /**
+     * [HOME [FRAGMENT 메인 홈 화면
+     * - 서비스 시작/중지
+     * - 버튼으로 다른 Fragment 이동 (BottomNavigation selectedItemId 방식)
+     * - ViewBinding 사용
+     */
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 

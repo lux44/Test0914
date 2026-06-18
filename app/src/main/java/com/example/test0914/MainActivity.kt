@@ -10,9 +10,17 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.test0914.databinding.ActivityMainBinding
 
+
 class MainActivity : AppCompatActivity() {
+    /**
+     * [MAIN_ACTIVITY 앱의 진입점 Activity
+     * - NavHostFragment + BottomNavigationView 연결
+     * - ViewBinding 사용
+     * - 생명주기 로그 출력
+     */
     // ✅ companion object로 binding 공개
     companion object {
+        // [BINDING] Fragment에서 BottomNavigation에 접근하기 위한 static binding
         lateinit var binding: ActivityMainBinding
             private set
     }
