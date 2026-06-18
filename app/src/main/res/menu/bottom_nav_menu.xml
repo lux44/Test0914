@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="홈"
+        android:icon="@android:drawable/ic_menu_compass" />
+
+    <item
+        android:id="@+id/diaryFragment"
+        android:title="일기"
+        android:icon="@android:drawable/ic_menu_edit" />
+
+    <item
+        android:id="@+id/widgetFragment"
+        android:title="위젯"
+        android:icon="@android:drawable/ic_menu_view" />
+
+    <item
+        android:id="@+id/intentFragment"
+        android:title="인텐트"
+        android:icon="@android:drawable/ic_menu_send" />
+
+    <item
+        android:id="@+id/graphicsFragment"
+        android:title="그래픽"
+        android:icon="@android:drawable/ic_menu_gallery" />
+</menu>

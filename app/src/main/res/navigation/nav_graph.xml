@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_garph.xml"
+    app:startDestination="@id.homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.test0914.HomeFragment"
+        android:label="홈"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/diaryFragment"
+        android:name="com.example.test0914.DiaryFragment"
+        android:label="일기"
+        tools:layout="@layout/fragment_diary" />
+
+    <fragment
+        android:id="@+id/widgetFragment"
+        android:name="com.example.test0914.WidgetFragment"
+        android:label="위젯"
+        tools:layout="@layout/fragment_widget" />
+
+    <fragment
+        android:id="@+id/intentFragment"
+        android:name="com.example.test0914.IntentFragment"
+        android:label="인텐트"
+        tools:layout="@layout/fragment_intent" />
+
+    <fragment
+        android:id="@+id/graphicsFragment"
+        android:name="com.example.test0914.GraphicsFragment"
+        android:label="그래픽"
+        tools:layout="@layout/fragment_graphics" />
+
+</navigation>
