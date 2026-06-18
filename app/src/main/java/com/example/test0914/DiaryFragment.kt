@@ -6,6 +6,7 @@ import android.app.TimePickerDialog
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import com.example.test0914.databinding.DialogDiaryBinding
 import com.example.test0914.databinding.FragmentDiaryBinding
 import java.util.Calendar
 

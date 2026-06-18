@@ -16,7 +16,7 @@ class GraphicView @JvmOverloads constructor(
     attrs: AttributeSet? = null
     ) : View(context, attrs) {
 
-        private var bitmap = BitmapFactory.decodeResource(resources, R.drawable.sample_image)
+        private var bitmap = BitmapFactory.decodeResource(resources, R.drawable.sampel_image)
 
         var scaleFactor = 1f
         var rotationDeg = 0f
