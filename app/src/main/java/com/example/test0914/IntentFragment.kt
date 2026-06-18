@@ -2,6 +2,8 @@ package com.example.test0914
 
 import android.app.Activity
 import android.content.Intent
+import android.graphics.BitmapFactory
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
