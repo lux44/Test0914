@@ -11,19 +11,21 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.test0914.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+    // ✅ companion object로 binding 공개
+    companion object {
+        lateinit var binding: ActivityMainBinding
+            private set
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // NavController 가져오기
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.navHostFragment) as NavHostFragment
         val navController = navHostFragment.navController
 
-        // BottomNavigationView와 NavController 연결 (이 한 줄이 핵심!)
         binding.bottomNav.setupWithNavController(navController)
     }
 
